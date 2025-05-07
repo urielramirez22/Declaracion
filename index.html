@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiero decirte algo</title>
+    <link rel="icon" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Boton Modo Oscuro -->
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+
+        <!-- Sección Inicial -->
+        <section class="section active" id="inicio">
+            <h1>Oyee niña bonita 💖</h1>
+            <p>Se que pues no llevamos mucho de conocernos pero quiero decirte una cosita</p>
+            <button class="btn" onclick="showSection('declaracion')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Siguiente</button>
+        </section>
+
+        <!-- Sección de Declaración -->
+        <section class="section" id="declaracion">
+            <h1>¿Quieres ser mi novia?</h1>
+            <p>Me gustas mucho y quisiera tener la oportunidad de estar en tu vida y de tener un lugar dentro de tu
+                corazon?</p>
+            <div class="button-container">
+                <button class="btn" onclick="showSection('aceptacion')">¡Sí! 💖</button>
+                <button class="btn" id="btnNo">No! 😢</button>
+            </div>
+        </section>
+
+        <!-- Sección de Aceptación -->
+        <section class="section" id="aceptacion">
+            <h1>¡Sabía que dirías que sí!</h1>
+            <div class="carta">
+                <h1>Esta carta es para ti</h1>
+                <p>Sabes,
+
+                    Cuando te vi esa noche y me brindaste el placer de bailar contigo senti algo que sinceramente tenia
+                    demasiado tiempo de que no sentia esofueron muchas emociones encontradas. <br>
+
+                    Y fue como un amor a primera vista lo que senti, me caiste bien, y la verdad quede no se maravillado
+                    contigo. Asi que por este medio te quise decir lo que siento por ti. <br>
+
+                    Y si estas leyendo esto es porque dijiste que si, asi que buenas noches pequeña,y cuidate mucho
+                    si, pondre todo de mi parte para que esto pueda funcionar. <br>
+
+                    Y si quererte fuera un delito, yo pediria cadena perpetua. TKM 💖<br>
+                    - </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
